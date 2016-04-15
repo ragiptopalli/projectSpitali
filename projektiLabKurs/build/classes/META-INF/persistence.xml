@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="projektiLabKursPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>EJB.Puntori</class>
+    <class>EJB.Barnat</class>
+    <class>EJB.FaturaPacientit</class>
+    <class>EJB.SallaOperacionit</class>
+    <class>EJB.Sektori</class>
+    <class>EJB.Motra</class>
+    <class>EJB.Farmacisti</class>
+    <class>EJB.Sysdiagrams</class>
+    <class>EJB.HistoriaPacientit</class>
+    <class>EJB.Pacienti</class>
+    <class>EJB.Adresa</class>
+    <class>EJB.Rescepsionisti</class>
+    <class>EJB.Doktori</class>
+    <class>EJB.Orari</class>
+    <class>EJB.DhomaPacientit</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=SpitaliDB"/>
+      <property name="javax.persistence.jdbc.user" value="sa"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="edmond123"/>
+    </properties>
+  </persistence-unit>
+</persistence>
